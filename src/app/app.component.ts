@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'DemoBergamo';
 
-  HTMLString='<div><p>Prova</p></div>'
+  HTMLString='<div><p>Prova</p></div>';
+  linkUrl="https://google.it";
 
   getVal(){
     return 2;
