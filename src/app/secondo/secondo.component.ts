@@ -20,4 +20,7 @@ export class SecondoComponent implements OnInit {
     //se voglio cliccare solo il  bottone devo usare stoop propagation
   }
   
+  inputEvent(ev){
+    this.testo =ev.targer.value ;
+  }
 }
