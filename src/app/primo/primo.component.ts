@@ -17,6 +17,8 @@ export class PrimoComponent implements OnInit {
 
   lista=[1,2,5,7,678];
 
+  myDate: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

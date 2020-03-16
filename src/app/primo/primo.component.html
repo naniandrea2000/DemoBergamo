@@ -28,4 +28,17 @@
 
 <!--quindi-->
 
-<div *ngFor="let pippo of lista">{{pippo}}</div>
+<div *ngFor="let pippo of lista">
+    {{pippo}}
+</div>
+
+<!--aggiunta operatore pipe che prende tutto il valore della variabile e gli apllica una funzione a nostra scelta-->
+<p>{{titoloInput | uppercase}} works!</p>
+<p>{{titoloInput | lowercase}} works!</p>
+<p>{{myDate}}</p>
+<p>{{myDate | date}}</p>
+<p>{{myDate | date:'long'}}</p>
+<p>{{myDate | date | uppercase}}</p>
+<!--si possono anche concatenare i pipe-->
+<!--formattazione data-->
+<!--pipe funziona solo a livello visivo-->
