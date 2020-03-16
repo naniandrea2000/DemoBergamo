@@ -1,1 +1,22 @@
-<p>primo works!</p>
+<p>{{title}}</p>
+<p [innerHTML]="title"></p>
+<p>title</p>
+<!--Da preferire l'interpolazione-->
+<div>{{HTMLString}}</div>
+<!--questo copia la stringa-->
+<div [innerHTML]="HTMLString"></div>
+<!--questo crea la struttura html-->
+
+<div>
+    <a href="https://google.it">Link</a>
+</div>
+<div>
+    <a href="{{linkUrl}}">Link</a>
+    <!--E' corretto anche questo ma per un codice più pulito si preferisce quello sotto-->
+</div>
+<div>
+    <a [href]="linkUrl">Link</a>
+    <!--questa è la più corretta-->
+</div>
+
+<p>{{titoloInput}} works!</p>
