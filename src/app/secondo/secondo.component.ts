@@ -12,4 +12,7 @@ export class SecondoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  clickEvent(){
+    alert('ho cliccato il pulsante')
+  }
 }
