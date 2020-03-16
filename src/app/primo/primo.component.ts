@@ -15,6 +15,8 @@ export class PrimoComponent implements OnInit {
   @Input()
   titoloInput: string;
 
+  lista=[1,2,5,7,678];
+
   constructor() { }
 
   ngOnInit(): void {
