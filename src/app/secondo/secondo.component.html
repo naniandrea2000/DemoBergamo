@@ -1,2 +1,8 @@
 <!--event binding si usano le tonde-->
-<button (click)="clickEvent()">Cliccami</button>
+<div (click)="clickEvent($event,'ciao')">
+    <p>Clicca</p>
+    <button (click)="clickEvent($event,'aloi')">Cliccami</button>
+</div>
+
+<input (input)="testo= $event.target.value" [value]=testo>
+<p>{{testo}}</p>
